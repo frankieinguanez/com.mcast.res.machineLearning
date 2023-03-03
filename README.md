@@ -21,7 +21,6 @@ A machine learning repository for machine learning content.
 conda create --name ml python=3.10
 conda activate ml
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
-pip install "tensorflow<2.11"
 conda install -c conda-forge matplotlib
 conda install -c conda-forge scikit-learn
 conda install -c conda-forge scipy
@@ -50,20 +49,6 @@ if device.type == 'cuda':
     print('Allocated:', round(torch.cuda.memory_allocated(0)/1024**3,1), 'GB')
     print('Cached:   ', round(torch.cuda.memory_reserved(0)/1024**3,1), 'GB')
 ```
-
-- Test if tensorflow version is correct and if Cuda is using GPU
-
-Launch Anaconda Prompt and **run as administrator**. Run the following code.<br/>
-
-```
-python -c "import tensorflow as tf; print(tf.__version__)"
-```
-
-**P.S.** Should show 2.10.1.<br />
-
-`python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"`<br />
-
-**P.S.** Should give you a list of supported graphic cards.
 
 - Testing tensorflow and verifying GPU usage
 
