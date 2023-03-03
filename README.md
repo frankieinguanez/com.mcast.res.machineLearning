@@ -59,4 +59,5 @@ Open a command prompt and type the following code:
 **P.S.** During computation, if using GPU you should see a task using the GPU. It is suggested to have OS reserve GPU for intensive processing.
 
 # Useful links
+- [Video Explanation](https://youtu.be/rXv9EOv5JpQ)
 - [Google Remote Desktop](https://remotedesktop.google.com/)
