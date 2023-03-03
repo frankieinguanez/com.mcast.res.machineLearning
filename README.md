@@ -51,5 +51,27 @@ if device.type == 'cuda':
     print('Cached:   ', round(torch.cuda.memory_reserved(0)/1024**3,1), 'GB')
 ```
 
+- Test if tensorflow version is correct and if Cuda is using GPU
+
+Launch Anaconda Prompt and **run as administrator**. Run the following code.<br/>
+
+```
+python -c "import tensorflow as tf; print(tf.__version__)"
+```
+
+**P.S.** Should show 2.10.1.<br />
+
+`python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"`<br />
+
+**P.S.** Should give you a list of supported graphic cards.
+
+- Testing tensorflow and verifying GPU usage
+
+Open a command prompt and type the following code:
+
+`nvidia-smi`
+
+**P.S.** During computation, if using GPU you should see a task using the GPU. It is suggested to have OS reserve GPU for intensive processing.
+
 # Useful links
 - [Google Remote Desktop](https://remotedesktop.google.com/)
