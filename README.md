@@ -131,3 +131,7 @@ This should show a table with the list of supported graphic cards. Note the devi
 - [Cuda, tensorflow, keras setup - GIT](https://github.com/jeffheaton/t81_558_deep_learning/blob/master/install/manual_setup2.ipynb)
 - [Python Deep Learning Course](https://github.com/jeffheaton/t81_558_deep_learning)
 - [Google Remote Desktop](https://remotedesktop.google.com/)
+
+# Setting remote desktop on Debian/Ubuntu systems
+-Install NoMachine on both devices. This will enable connection over a local network out of the box-For over the internet connections, open 4000 port on tcp/udp on the desktop top be connected to. Then use the public IP of the remote desktop and 4000 as port for an easy connection.
+-For portforwarding guides: [How To Set Up Port Forwarding - Port Forward](https://portforward.com/)
